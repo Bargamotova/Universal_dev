@@ -1,0 +1,27 @@
+.theme {
+  align-self: end;
+  position: relative;
+  @media only screen and (min-width: 43.75em) {
+    top: -80px;
+  }
+  &__title {
+    color: var(--color-grey-secondary);
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  &__subtitle {
+    color: var(--color-grey-secondary);
+    margin: 0;
+    margin-bottom: 5px;
+    @media only screen and (min-width: 43.75em) {
+      max-width: 24rem;
+    }
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 2rem;
+    @media only screen and (min-width: 43.75em) {
+      max-width: 26.9rem;
+    }
+  }
+}

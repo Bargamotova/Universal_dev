@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="Bookmark"><g fill="inherit">
+    <path clip-rule="evenodd" d="M2 0h10a2 2 0 0 1 2 2v16l-6.905-5L0 18V2a2 2 0 0 1 2-2Z"/>
+</g></symbol><symbol id="Man"><g fill="inherit">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 15.632C14.367 17.21 11.7 18 8 18s-6.367-.79-8-2.368C0 12.348 1.906 9.983 4.706 9 5.6 9.417 6.595 10 8 10s2.331-.607 3.294-1C14.057 9.997 16 12.375 16 15.632ZM8 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="inherit"/>
+</g></symbol><symbol id="Search"><g fill="inherit">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m17.435 16.395-4.289-4.455a7.238 7.238 0 0 0 1.707-4.673C14.853 3.26 11.59 0 7.577 0 3.564 0 .3 3.26.3 7.267c0 4.008 3.264 7.268 7.277 7.268a7.205 7.205 0 0 0 4.168-1.315l4.322 4.49c.181.187.424.29.684.29a.948.948 0 0 0 .684-1.605Zm-9.858-14.5a5.381 5.381 0 0 1 5.378 5.372 5.38 5.38 0 0 1-5.378 5.372 5.381 5.381 0 0 1-5.379-5.372 5.381 5.381 0 0 1 5.379-5.371Z" fill="inherit"/>
+</g></symbol></svg>

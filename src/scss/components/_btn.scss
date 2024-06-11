@@ -1,0 +1,65 @@
+.btn {
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-align: center;
+  background: var(--color-blue);
+  user-select: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  transition: all 0.3s ease;
+
+  &--read {
+    padding: 10px 45px 10px 25px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      right: 4px;
+      background-image: url("data:image/svg+xml,%3Csvg width='15' height='7' viewBox='0 0 15 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 3V4H11V7L15 3.5L11 0V3H0Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      width: 32px;
+      height: 15px;
+      transition: all 0.3s ease;
+    }
+  }
+  &--red {
+    background: var(--color-red);
+  }
+  &--darkblue {
+    background: #4267b2;
+  }
+  &--transparency {
+    background: transparent;
+    border: 1px solid var(--color-white-opacity);
+  }
+
+  &:focus,
+  &:hover {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+
+    transform: translateY(-2px);
+    &::after {
+      transform: translateX(6px);
+    }
+  }
+  &--more {
+    text-align: center;
+    background: transparent;
+    color: var(--color-grey-secondary);
+    border: 1px solid var(--color-grey);
+    max-width: 75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      box-shadow: 1px 2px 5px rgba(217, 218, 219, 0.8);
+    }
+  }
+}

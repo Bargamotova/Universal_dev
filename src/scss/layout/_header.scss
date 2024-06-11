@@ -1,0 +1,199 @@
+.top {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding: 2px 0;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  @media only screen and (min-width: 43.75em) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &::after {
+    display: none;
+    @media only screen and (min-width: 43.75em) {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background: var(--color-border);
+      top: 0;
+      //left: 40.4rem;
+      display: block;
+      left: 11.4rem;
+    }
+  }
+  &__left {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (min-width: 43.75em) {
+      justify-content: center;
+      align-items: center;
+    }
+    span {
+      position: absolute;
+      left: 2rem;
+      font-weight: 900;
+      display: inline-block;
+      margin-left: 2rem;
+      color: var(--color-grey-secondary);
+      padding-right: 25px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    @media only screen and (min-width: 43.75em) {
+      margin-left: 2.5rem;
+      left: 100px;
+    }
+  }
+  &__form-btn {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    @media only screen and (min-width: 43.75em) {
+      left: 0;
+    }
+  }
+  &__form-svg {
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  &__form-input {
+    border: none;
+    width: 0%;
+
+    color: #939699;
+    padding: 5px 0 5px 30px;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    v &::placeholder {
+      color: #939699;
+    }
+    &.active {
+      width: 100%;
+    }
+    @media only screen and (min-width: 43.75em) {
+      width: 100%;
+    }
+  }
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__right-box {
+    display: none;
+    @media only screen and (min-width: 43.75em) {
+      border: 2px solid #bcbfc2;
+      border-bottom: none;
+      background: #bcbfc2;
+      margin-right: 13px;
+      position: relative;
+      bottom: -2px;
+      display: block;
+    }
+  }
+  &__right-img {
+    display: none;
+    @media only screen and (min-width: 43.75em) {
+      padding: 2px 1px 0 2px;
+      display: block;
+    }
+  }
+  &__right-title {
+    margin: 0;
+  }
+
+  &__right-link {
+    cursor: pointer;
+    @media only screen and (min-width: 37.5em) {
+      margin-right: 50px;
+    }
+  }
+  &__right-btn {
+    position: relative;
+    padding-left: 2rem;
+    gap: 10px;
+    color: var(--color-grey-primary);
+    svg {
+      margin-right: 1rem;
+    }
+  }
+}
+.bottom {
+  display: grid;
+  place-items: start;
+  column-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  @media only screen and (min-width: 37.5em) {
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 2.5rem;
+  }
+  @media only screen and (min-width: 64.5em) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-inline: 0;
+    padding-bottom: 0;
+  }
+  &__one {
+    grid-column: 1/2;
+  }
+  &__two {
+    display: none;
+    @media only screen and (min-width: 64.5em) {
+      grid-row: 2/3;
+      display: block;
+    }
+  }
+  &__three {
+    grid-column: 2/3;
+    align-self: center;
+    margin: 0;
+    @media only screen and (min-width: 37.5em) {
+      grid-column: 3/4;
+    }
+  }
+  &__four {
+    @media only screen and (min-width: 37.5em) {
+      // grid-column: 3/4;
+      padding: 0;
+    }
+  }
+  &__five {
+    display: flex;
+    gap: 10px;
+    justify-self: end;
+    @media only screen and (min-width: 37.5em) {
+      grid-column: 3/4;
+    }
+  }
+  &__logo {
+    @media only screen and (min-width: 43.75em) {
+      margin-left: 3rem;
+    }
+  }
+  span {
+    color: var(--color-grey-primary);
+    @media only screen and (min-width: 43.75em) {
+      margin-left: -13rem;
+    }
+  }
+  &__date {
+    margin-right: -6rem;
+  }
+}

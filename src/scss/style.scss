@@ -1,0 +1,41 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/normalise";
+@import "base/base";
+@import "base/fonts";
+@import "base/svgs";
+@import "base/typography";
+
+@import "libs/slick";
+
+@import "components/slider";
+@import "components/btn";
+@import "components/flex";
+@import "components/grid";
+@import "components/info";
+@import "components/overlay";
+@import "components/burger";
+
+@import "pages/home";
+
+@import "layout/hero";
+@import "layout/main-news";
+@import "layout/popular";
+@import "layout/notes";
+@import "layout/hot";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/herous";
+@import "layout/articles";
+@import "layout/support";
+@import "layout/qout";
+@import "layout/tags";
+@import "layout/theme";
+@import "layout/author";
+@import "layout/note";
+@import "layout/carusel";
+@import "layout/comments";
+@import "layout/form";
+@import "layout/tabs";

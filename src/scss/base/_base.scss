@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  box-sizing: border-box;
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  // @include respond(tab-port) {
+  //   // width < 900?
+  //   font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  // }
+
+  // @include respond(big-desktop) {
+  //   font-size: 75%; //1rem = 12, 12/16
+  // }
+}
+body {
+  min-width: 320px;
+  height: 100%;
+  overflow-x: hidden;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 0 auto;
+}
+.btn-reset {
+  border: none;
+  padding: 0;
+  outline: none;
+  background: transparent;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.container {
+  max-width: var(--width-content);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hidden-checkbox {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+.checked {
+  opacity: 1;
+}
+.author-block {
+  display: flex;
+  align-items: center;
+
+  &__info {
+    margin-left: 1rem;
+    .name {
+      color: var(--color-white);
+      opacity: 0.85;
+    }
+  }
+}

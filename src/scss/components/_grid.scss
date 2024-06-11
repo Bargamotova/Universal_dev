@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--gap);
+  row-gap: var(--gap);
+  @media only screen and (min-width: 43.75em) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  @media only screen and (min-width: 64.5em) {
+    grid-template-columns: repeat(12, 68px);
+  }
+}
+.grid-small {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

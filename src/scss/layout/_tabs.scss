@@ -1,0 +1,191 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--color-white);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  @media only screen and (min-width: 1085px) {
+    flex-wrap: nowrap;
+  }
+}
+.tabs__left {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  flex-basis: 87.7rem;
+  flex-grow: 9999;
+}
+.tabs__right {
+  flex-basis: 26.3rem;
+  flex-grow: 1;
+}
+.tabs__conteiner {
+  display: none;
+  width: 100%;
+}
+.tabs__conteiner.active {
+  display: block;
+}
+.tab {
+  &__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  &__content {
+    position: relative;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    @media only screen and (min-width: 37.5em) {
+      padding-top: 55px;
+      padding-left: 55px;
+      padding-bottom: 95px;
+    }
+  }
+  &__author {
+    margin: 0;
+    margin-bottom: 2rem;
+    @media only screen and (min-width: 43.75em) {
+      margin-bottom: 14.5rem;
+    }
+  }
+  &__info {
+    .name {
+      margin: 0;
+    }
+    span {
+      color: var(--color-white-opacity);
+    }
+  }
+  &__title {
+    font-size: 4rem;
+    max-width: 54rem;
+    color: white;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+  &__text {
+    color: var(--color-blue);
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+  }
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+  }
+  &__video-link {
+    color: var(--color-white);
+    opacity: 0.85;
+    display: flex;
+    margin: 0;
+  }
+  &__btn {
+    margin-bottom: 4rem;
+    @media only screen and (min-width: 37.5em) {
+      margin-bottom: 0;
+    }
+  }
+  .video {
+    &__link > * {
+      transform: translateY(-4px);
+    }
+    .time {
+      color: var(--color-white-opacity);
+    }
+    &__span {
+      color: var(--color-white);
+      opacity: 0.85;
+    }
+  }
+}
+
+// tabs
+.preview {
+  &__item {
+    text-align: left;
+    padding: 17px 25px 19px;
+    background: #fff;
+    cursor: pointer;
+    &--center {
+      padding: 19px 25px;
+      text-align: center;
+    }
+  }
+  &__item.active {
+    background: #e5e5e5;
+  }
+  &__item:not(:last-child) {
+    border-bottom: 1px solid var(--color-grey);
+  }
+  &__item--click.active {
+    position: relative;
+    isolation: isolate;
+    background: var(--color-back-light);
+    @media only screen and (min-width: 1085px) {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: #e5e5e5;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+        z-index: 2;
+      }
+    }
+  }
+  &__title {
+    margin: 0;
+  }
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 8px;
+    &--bluegreen {
+      color: var(--color-bluegreen);
+    }
+    &--green {
+      color: var(--color-green);
+    }
+    &--greyblue {
+      color: var(--color-greyblue);
+    }
+    &--orange {
+      color: var(--color-orange);
+    }
+    &--purple {
+      color: var(--color-purple);
+    }
+  }
+  &__text {
+    margin: 0;
+  }
+}
+.preview__text--video {
+  position: relative;
+  // isolation: isolate;
+  &::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 19.9995C4.47715 19.9995 0 15.5224 0 9.99951C0 4.47666 4.47715 -0.000488281 10 -0.000488281C15.5228 -0.000488281 20 4.47666 20 9.99951C20 15.5224 15.5228 19.9995 10 19.9995ZM10 18.9995C14.9706 18.9995 19 14.9701 19 9.99951C19 5.02895 14.9706 0.999512 10 0.999512C5.02944 0.999512 1 5.02895 1 9.99951C1 14.9701 5.02944 18.9995 10 18.9995Z' fill='%23BCBFC2'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.2 12.3687V7.62986C8.2 7.44731 8.3532 7.29932 8.54218 7.29932C8.60779 7.29932 8.67202 7.31754 8.72722 7.35181L12.5428 9.72125C12.7018 9.81997 12.7478 10.0245 12.6456 10.178C12.6191 10.2179 12.584 10.2517 12.5428 10.2773L8.72722 12.6468C8.56825 12.7455 8.35654 12.701 8.25434 12.5475C8.21886 12.4942 8.2 12.4321 8.2 12.3687Z' fill='%23262D33'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    @media only screen and (min-width: 37.5em) {
+      bottom: -2px;
+      right: 48px;
+    }
+    @media only screen and (min-width: 90em) {
+      bottom: -2px;
+      right: 60px;
+    }
+  }
+}

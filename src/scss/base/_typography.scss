@@ -1,0 +1,212 @@
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--fz-primary);
+  color: var(--color-grey-primary);
+}
+.title {
+  font-family: "Roboto Slab", serif;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-style: normal;
+}
+.btn,
+.popular__aside-btn,
+.popular-card__author-name,
+.aside__btn {
+  font-family: "Lato", sans-serif;
+  font-size: var(--fz-small);
+  line-height: 20px;
+  font-weight: 900;
+}
+.form__textarea {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--fz-primary);
+  color: var(--color-grey-primary);
+}
+.top__form-input {
+  font-family: inherit;
+  color: var(--color-grey-span);
+}
+.top__left {
+  span {
+    font-weight: 900;
+  }
+}
+.top__right-title {
+  font-size: var(--fz-tiny);
+  line-height: 15px;
+  font-weight: 900;
+  color: var(--color-grey-secondary);
+}
+.top__right-span {
+  font-size: var(--fz-tiny);
+  line-height: 15px;
+  color: var(--color-grey-span);
+}
+.top__right-btn {
+  font-family: inherit;
+  font-size: var(--fz-small);
+  line-height: 20px;
+  color: var(--color-grey-secondary);
+}
+.bottom__title {
+  font-size: var(--fz-title);
+}
+.hero__subtitle,
+.popular-card__item-title,
+.theme__subtitle,
+.cards__title,
+.comment-user__name {
+  font-size: var(--fz-medium);
+}
+.preview__title {
+  font-size: var(--fz-primary);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-grey-secondary);
+}
+.subtitle {
+  font-size: 1.2rem;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.tab__text {
+  font-weight: 400;
+}
+.popular__aside-title,
+.aside__title,
+.contacts__link {
+  font-size: var(--fz-small);
+  text-transform: uppercase;
+  font-size: var(--fz-primary);
+  font-style: normal;
+  line-height: 20px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+.date {
+  font-size: var(--fz-tiny);
+  line-height: 15px;
+  color: var(--color-grey-span);
+  &--white {
+    color: var(--color-white);
+    &--ops {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+.hot__date,
+.list__link,
+.popular-card__author-preview {
+  font-size: var(--fz-small);
+  line-height: 20px;
+}
+.hot__title {
+  font-size: clamp(16px, 5vw, var(--fz-primary));
+}
+.hot__item-title {
+  font-size: var(--fz-medium);
+  line-height: 20px;
+}
+.number {
+  font-size: 7rem;
+  line-height: 5rem;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--color-grey-secondary);
+  opacity: 0.08;
+}
+.tab__title,
+.slide__title {
+  font-size: var(--fz-big);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  line-height: 1.3;
+  color: var(--color-white);
+}
+.popular__aside-qout {
+  font-size: 2rem;
+}
+.popular-card__title,
+.careers__title,
+.qout__text,
+.support__title {
+  font-size: 25px;
+  line-height: 30px;
+  &--invert {
+    font-size: var(--fz-medium);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+}
+
+.main-news__title,
+.footer__title,
+.comments__title {
+  font-size: var(--fz-title);
+  line-height: 50px;
+}
+.footer__title,
+.comments__title {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+.footer__item-title {
+  font-size: var(--fz-small);
+  line-height: 20px;
+  font-weight: 900;
+}
+.card__title,
+.theme__title,
+.form__label,
+.author-info__name {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.author-info__num,
+.author__link {
+  font-weight: 700;
+}
+.slide__author {
+  span {
+    font-size: var(--fz-tiny);
+    line-height: 15px;
+    color: var(--color-white-opacity);
+  }
+}
+.herous__title {
+  font-size: 5.5rem;
+  line-height: 7rem;
+}
+.herous__text,
+.comment-user__text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.qout__author-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.articles-top {
+  h3 {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+.time,
+.popular-card__author-num,
+.qout-info__span,
+.author-box__position {
+  font-size: var(--fz-tiny);
+  line-height: 15px;
+}

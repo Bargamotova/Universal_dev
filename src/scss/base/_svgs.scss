@@ -1,0 +1,132 @@
+.bookmark {
+  width: 14px;
+  height: 18px;
+  fill: #bcbfc2;
+  transition: fill 0.3s ease;
+}
+.man {
+  width: 16px;
+  height: 18px;
+  fill: #bcbfc2;
+  transform: translateY(0);
+  &:hover {
+    fill: var(--color-red-accent);
+  }
+}
+.sun {
+  width: 18px;
+  height: 18px;
+}
+.search {
+  width: 18px;
+  height: 18px;
+  fill: #bcbfc2;
+  &:hover {
+    fill: var(--color-red-accent);
+  }
+}
+.video-icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.play {
+  width: 20px;
+  height: 20px;
+}
+.comment {
+  width: 15px;
+  height: 14px;
+  cursor: pointer;
+}
+.heart {
+  width: 13px;
+  height: 13px;
+}
+.heart-medium {
+  width: 18px;
+  height: 16px;
+}
+.photo {
+  width: 19px;
+  height: 15px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.sotial-icon {
+  width: 40px;
+  height: 40px;
+}
+.clock {
+  width: 15px;
+  height: 15px;
+}
+.share {
+  width: 20px;
+  height: 20px;
+}
+.herous__icon {
+  fill: var(--color-white);
+  opacity: 0.4;
+  transform: translateY(0);
+}
+.bookmark-big {
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
+}
+.home {
+  width: 20px;
+  height: 20px;
+  transform: translateY(0);
+}
+.arrow-prev,
+.arrow-next {
+  width: 15px;
+  height: 7px;
+  transform: translateY(0);
+}
+.sotial-icons {
+  width: 40px;
+  height: 40px;
+}
+.eye {
+  width: 15px;
+  height: 10px;
+}
+.fb-icon {
+  width: 10px;
+  height: 18px;
+}
+.twit {
+  width: 18px;
+  height: 16px;
+}
+.dots-icon {
+  width: 40px;
+  height: 40px;
+}
+.pencil {
+  width: 18px;
+  height: 18px;
+  transform: translateY(0);
+}
+.thumb {
+  width: 15px;
+  height: 13px;
+  transform: translateY(0);
+}
+.load {
+  width: 15px;
+  height: 15px;
+  transform: translateY(0);
+}
+svg {
+  margin-right: 5px;
+  transform: translateY(2px);
+  path {
+    fill: inherit;
+  }
+}

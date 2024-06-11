@@ -1,0 +1,17 @@
+.main-news {
+  margin-top: 6rem;
+  background: url("../img/bg.jpg"), #191218;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0 5.5rem;
+  text-align: center;
+  @media only screen and (min-width: 75em) {
+    background-size: contain;
+  }
+  &__title {
+    color: var(--color-white);
+    margin: 0 auto 25px;
+    max-width: 655px;
+  }
+}

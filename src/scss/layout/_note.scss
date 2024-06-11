@@ -1,0 +1,39 @@
+.cards {
+  &__list {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    & > * {
+      margin-bottom: 3rem;
+    }
+    @media only screen and (min-width: 37.5em) {
+      display: grid;
+      column-gap: calc(var(--gap) - 1px);
+      grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    }
+    @media only screen and (min-width: 43.75em) {
+      grid-template-columns: repeat(auto-fit, minmax(min(263px, 100%), 1fr));
+    }
+  }
+  &__item {
+    .info {
+      gap: 1rem;
+    }
+  }
+  &__content {
+    & > *:not(:last-child) {
+      margin: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__img {
+    border-radius: 10px;
+    width: 100%;
+    @media only screen and (min-width: 43.75em) {
+      max-width: 263px;
+    }
+  }
+  &__title {
+    max-width: 263px;
+  }
+}

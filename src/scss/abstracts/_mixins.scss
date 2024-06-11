@@ -1,0 +1,77 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../fonts/#{$url}.woff2") format("woff2"), url("../fonts/#{$url}.woff") format("woff");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+//* @include
+
+//* MEDIA QUERY MANAGER
+/*
+0 - 600     Phone
+600 - 900   Tablet portrait
+900 - 1200  Tablet landscape
+[1200 - 1800]  is our normal styles apply
+1800 + :   Big desktop
+*/
+
+/*
+@breakpoint argument choices :
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: base + typografy > general layout + grid > page layout > components
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone-s {
+    //600px
+    @media only screen and (max-width: 23.4em) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    //600px
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    //900px
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    //1200px
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    //1800px
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+//  @include respond (big-desktop) {
+//
+// }
+//  @include respond (tab-land) {
+//
+// }
+//  @include respond (tab-port) {
+//
+// }
+//  @include respond (phon) {
+//
+// }
+//  @include respond(phone-s) {
+//
+// }

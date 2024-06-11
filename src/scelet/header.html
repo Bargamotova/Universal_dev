@@ -1,0 +1,54 @@
+<header class="header">
+  <div class="container">
+    <div class="header__top top">
+      <div class="top__left">
+        <button class="btn-reset burger">
+        </button>
+        <span>Sections</span>
+        <form class="top__form">
+          <button class="btn-reset top__form-btn" type="submit">
+            <svg class="search">
+              <use class="searching" xlink:href="img/spriteStyle.svg#Search">
+              </use>
+            </svg>
+
+          </button>
+          <input class="top__form-input" type="text" placeholder="Search">
+        </form>
+      </div>
+      <div class="top__right">
+        <a class="top__right-link flex-space">
+          <div class="top__right-box">
+            <img src="img/subs.jpg" alt="The advertizing to subscribe " class="top__right-img">
+          </div>
+
+          <div class="top__right-info">
+            <p class="top__right-title">Subscribe Now</p>
+            <span class="top__right-span">3 month for $19</span>
+          </div>
+        </a>
+        <button class="top__right-btn btn-reset flex-center" type="button">
+          <svg class="man">
+            <use class="user" xlink:href="img/spriteStyle.svg#Man">
+            </use>
+          </svg>Sign in</button>
+      </div>
+    </div>
+    <div class="header__bottom bottom">
+      <img class="bottom__logo bottom__one" src="img/logo.png" alt="The fridom statue">
+      <span class="bottom__two">Boston and New York Bear Brunt</span>
+      <h1 class="title bottom__title  bottom__three">Universal</h1>
+      <div class="bottom__date bottom__four">Monday, January 1, 2018</div>
+      <div class="bottom__wheader bottom__five">
+        <svg class="sun">
+          <use xlink:href="img/sprite.svg#Sun">
+          </use>
+        </svg>
+        - 23 °C
+      </div>
+    </div>
+
+  </div>
+  @include('../partials/navigation.html')
+
+</header>

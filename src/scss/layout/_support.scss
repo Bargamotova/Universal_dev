@@ -1,0 +1,41 @@
+.support {
+  padding: 3rem 0 9rem;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--color-grey);
+    top: 0;
+    left: 0;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 2.5rem;
+    color: var(--color-grey-secondary);
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  &__link {
+    .support__icon {
+      margin-right: 1rem;
+    }
+  }
+  &__data {
+    margin-left: 5px;
+    &--pink {
+      color: #ffc4c9;
+    }
+    &--blue {
+      color: #bbc6ff;
+    }
+    &--lightblue {
+      color: #c5e4fc;
+    }
+  }
+}
